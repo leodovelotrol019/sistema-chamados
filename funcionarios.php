@@ -5,15 +5,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/cadastros.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Sistema Chamados - Funcionários</title>
 </head>
 
 <body>
-    <header><h1>CADASTRO - FUNCIONÁRIOS</h1></header>
+    <header><h1>CADASTRO - FUNCIONÁRIOS</h1>
+ <nav>
+
+            <ul>
+                <li><a href="">listagem</a></li>
+                <li><a href="chamados.php">chamados</a></li>
+            
+                <li><a href="departamentos.php">Departamendo Cadastrar</a></li>
+                <li><a href="empresas.php">Empresas Cadastrar</a></li>
+            </ul>
+
+        </nav>
+</header>
     <main>
     <div id="container">
     <h1>Cadastro de Funcionários</h1>
     <form action="backend/fucionarios-cadastrar.php" method="POST">
+        <div>
+            <div class="areas">
         <div>
             <label for="nome">Nome</label>
             <input type="text" name="nome" id="nome">
@@ -36,9 +51,13 @@
 
             </select>
         </div>
-        
+    </div>
+    </div>
+    <div class="botao">
+        <input class="btn-cad" type="submit" value="Cadastrar">
+    </div>
     </form>
-    <input class="btn-cad" type="submit" value="Cadastrar">
+    
 </div>
 </main>
 </body>

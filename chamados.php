@@ -7,9 +7,9 @@ echo "conexão realizada com secesso";
 $sql = "SELECT  id, assunto,prioridade FROM tb_chamados";
 $chamados = $conn->query($sql);
 foreach ($chamados as $chamado) {
-echo "<br>ID:".  $chamado[ 'id']; 
-echo "<br>Assunto:". $chamado[ 'assunto']; 
-echo   "<br>Prioridade:". $chamado[ 'prioridade'];
+// echo "<br>ID:".  $chamado[ 'id']; 
+// echo "<br>Assunto:". $chamado[ 'assunto']; 
+// echo   "<br>Prioridade:". $chamado[ 'prioridade'];
 }
 
 ?>
