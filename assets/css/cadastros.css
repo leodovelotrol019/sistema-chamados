@@ -24,6 +24,16 @@ body{
     border-radius: 10px;
     
 }
+#container-lista {
+    margin: auto;
+    background-color: #600074;
+    width: 50%;
+    height: 50vh;
+    padding: 10px;
+    margin-top: 150px;
+    border-radius: 10px;
+    
+}
 #container h1{
 text-align: center;
 }
@@ -86,4 +96,20 @@ select{
     grid-template-columns: 2fr 1fr;
     gap: 1vw;
     
+}
+table,td,th{
+    border:  2px solid white;
+    border-collapse: collapse;
+}
+table{
+    width: 100%;
+    
+}
+th{
+    height: 5vh;
+    width: 10px;
+}
+tr:hover{
+background-color: coral;
+cursor: pointer;
 }

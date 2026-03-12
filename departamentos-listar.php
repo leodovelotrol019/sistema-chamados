@@ -39,7 +39,20 @@ echo "Não foi possivel se conectar o banco";
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <h1>Departamentos - Lista de Cadastros</h1>
+    <header>
+        <nav>
+<h1>Departamentos - Lista de Cadastros</h1>
+            <ul>
+            
+                <li><a href="departamentos.php">Departamendo Cadastrar</a></li>
+                
+            </ul>
+
+        </nav>
+    </header>
+    <main>
+    <div id="container-lista" >
+   
     <table >
         <tr>
             <th>Id</th>
@@ -62,6 +75,7 @@ echo "Não foi possivel se conectar o banco";
         </tr>
         <?php endforeach;?>
     </table>
-    
+    </div>
+    </main>
 </body>
 </html>

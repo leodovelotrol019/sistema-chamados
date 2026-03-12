@@ -40,6 +40,7 @@
     <div class="botao">
       <input class="btn-cad" type="submit" value="Cadastrar">
       </div>
+      <a href="departamentos-listar.php">Lista</a>
     </form>
     
 </div>

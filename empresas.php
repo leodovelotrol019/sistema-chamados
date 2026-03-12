@@ -50,10 +50,13 @@
         </div>
     </div>
         
-    </form>
-    <div class="botao">
+        <div class="botao">
     <input class="btn-cad" type="submit" value="Cadastrar">
+
     </div>
+    <a href="empresas-listar.php">lista</a>
+    </form>
+    
 </div>
 </main>
 </body>
