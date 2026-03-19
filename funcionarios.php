@@ -61,6 +61,21 @@
     
 </div>
 </main>
+<script src="assets/js/inputmask.js"></script>
+ 
+<script>
+    var telefone = document.getElementById('telefone');
+ 
+    var im = new Inputmask({
+        mask: [
+            "(99) 9999-9999",   // fixo
+            "(99) 99999-9999"   // celular
+        ],
+        keepStatic: true
+    });
+ 
+    im.mask(telefone);
+</script>
 </body>
 
 </html>

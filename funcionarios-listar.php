@@ -82,7 +82,8 @@ echo "Não foi possivel se conectar o banco";
             <td><?php echo $funcionario ['departamento'];?></td>
             <td><?php echo $funcionario ['data_cadastro'];?></td>
             <td><?php echo $funcionario ['ativo'];?></td>
-            <td><a class="deletar" href="backend/funcionarios-deletar.php?id=<?php echo $funcionario ['id']?>">Deletar</a></td>
+            <td><a class="deletar" onclick="return confirm('Deseja editar?')" href="backend/funcionarios-deletar.php?id=<?php echo $funcionario ['id']?>">Deletar</a>
+            <a onclick="return confirm('Deseja editar?')" class="editar" href="funcionarios-editar.php?id=<?php echo $funcionario ['id']?>">Editar</a></td>
         </tr>
         <?php endforeach;?>
         
