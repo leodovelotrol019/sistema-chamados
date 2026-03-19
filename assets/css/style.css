@@ -11,6 +11,7 @@ ul{
     display: flex;
     justify-content: center;
     gap: 20px;
+
     
 }
 a{
@@ -26,5 +27,8 @@ a{
 a:hover{
     color: aquamarine;
     border-bottom: 2px solid aquamarine;
+}
+nav{
+   
 }
 

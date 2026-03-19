@@ -39,9 +39,9 @@ echo "Não foi possivel se conectar o banco";
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header><h1>Empresas - Lista de Cadastros</h1>
+    
 <nav>
-
+<header><h1>Empresas - Lista de Cadastros</h1>
             <ul>
                 
                 <li><a href="empresas.php">Empresas Cadastrar</a></li>

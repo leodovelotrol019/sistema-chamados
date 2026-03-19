@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    <header><h1>CADASTRO - Departamentos</h1>
+    
  <nav>
-
+<header><h1>CADASTRO - Departamentos</h1>
             <ul>
                 <li><a href="">listagem</a></li>
                 <li><a href="chamados.php">chamados</a></li>

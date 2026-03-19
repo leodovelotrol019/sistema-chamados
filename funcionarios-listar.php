@@ -41,9 +41,9 @@ echo "Não foi possivel se conectar o banco";
 <body>
  
 <header>
-    <h1>Funcionários - Lista de Cadastros</h1>
+    
     <nav>
-
+<h1>Funcionários - Lista de Cadastros</h1>
             <ul>
                 
                 <li><a href="funcionarios.php">Funcionarios Cadastrar</a></li>
