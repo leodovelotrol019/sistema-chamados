@@ -60,6 +60,7 @@ echo "Não foi possivel se conectar o banco";
             <th>Area</th>
             <th>Data Cadastro</th>
             <th>Ativo</th>
+            <th>Ações</th>
         </tr>
         <?php
         foreach ($departamentos as $departamento): 
@@ -68,10 +69,13 @@ echo "Não foi possivel se conectar o banco";
         ?>
         <tr>
             <td><?php echo $departamento ['id'];?></td>
-            <td><?php echo $departamento ['area'];?></td>
             <td><?php echo $departamento ['departamento'];?></td>
+            <td><?php echo $departamento ['area'];?></td>
             <td><?php echo $departamento ['data_cadastro'];?></td>
             <td><?php echo $departamento ['ativo'];?></td>
+            <td>
+                <a class="deletar" href="backend/departamento-deletar.php?id=<?php echo $departamento ['id']?>">Deletar</a>
+            </td>
         </tr>
         <?php endforeach;?>
     </table>

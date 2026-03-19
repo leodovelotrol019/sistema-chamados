@@ -28,7 +28,14 @@ a:hover{
     color: aquamarine;
     border-bottom: 2px solid aquamarine;
 }
-nav{
-   
+.deletar{
+    background-color: red;
+    color: white;
+    border-style: none;
+    transition: 0.3;
 }
-
+.deletar:hover{
+    border-style: none;
+    color: white;
+    transform: scale(1.05);
+}

@@ -29,7 +29,7 @@
         <div class="areas">
         <div>
             <label for="departamento">Departamento</label>
-            <input type="text" name="nome" id="nome">
+            <input type="text" name="departamento" id="departamento">
         </div>
             <div>
             <label for="area">Area</label>

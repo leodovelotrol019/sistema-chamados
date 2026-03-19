@@ -34,7 +34,7 @@
             <input type="text" name="nome" id="nome">
         </div>
         <div>
-            <label for="">E-mail</label>
+            <label for="email">E-mail</label>
             <input type="text" name="email" id="email">
         </div>
         <div>
@@ -42,7 +42,7 @@
             <input type="text" name="telefone" id="telefone">
         </div>
         <div>
-            <label for="departamento">Departamendo</label>
+            <label for="departamento">Departamento</label>
             <select name="departamento" id="departamento">
                 <option value="" disabled selected>Selecione...</option>
                 <option value="Suporte">Suporte</option>

@@ -16,7 +16,7 @@ $comando = $conexao->prepare($sql);
 $comando->execute();
 echo "cadastro realizado com sucesso! ";
 
-
+header('location: ../empresas-listar.php');
 } catch (PDOException $erro) {
     echo "Não foi possivel ser feito o CADASTRO!".$erro->getMessage();
 }
