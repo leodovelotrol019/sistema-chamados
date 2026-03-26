@@ -4,18 +4,19 @@ require_once 'conexao.php';
 try {
     //Captura os dados enviados pelo frontend
     $id = $_POST['id'];
-    $nome = $_POST['nome'];
-    $email = $_POST['email'];
-    $telefone = $_POST['telefone'];
     $departamento = $_POST['departamento'];
+    $area = $_POST['area'];
+   
+    
+    
 
-$sql = "UPDATE tb_funcionarios SET nome='$nome',email='$email',telefone='$telefone',departamento='$departamento'";
+$sql = "UPDATE tb_departamentos SET area='$area',departamento='$departamento' WHERE id = $id ";
 $comando = $conexao->prepare($sql);
 $comando->execute();
 //echo "cadastro realizado com sucesso!";
-header('location: funcionarios-listar.php');
+header('location: ../departamentos-listar.php');
 } catch (PDOException $erro) {
-    echo "Não foi possível cadastrar".$erro->getMessage();
+    echo "Não foi possível atualizar".$erro->getMessage();
 }
 
 

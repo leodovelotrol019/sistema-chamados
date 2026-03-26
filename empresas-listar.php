@@ -81,7 +81,9 @@ echo "Não foi possivel se conectar o banco";
             <td><?php echo $empresa ['telefone'];?></td>
             <td><?php echo $empresa ['data'];?></td>
             <td><?php echo $empresa ['ativo'];?></td>
-            <td><a class="deletar" href="backend/empresas-deletar.php?id=<?php echo $empresa ['id']?>">Deletar</a></td>
+           
+            <td><a class="deletar" onclick="return confirm('Deseja editar?')" href="backend/empresas-deletar.php?id=<?php echo $empresa ['id']?>">Deletar</a>
+             <a onclick="return confirm('Deseja editar?')" class="editar" href="empresas-editar.php?id=<?php echo $empresa ['id']?>">Editar</a></td>
         </tr>
         <?php endforeach;?>
         

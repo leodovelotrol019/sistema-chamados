@@ -5,15 +5,14 @@ require_once 'backend/conexao.php';
 
 try{
 $id = $_GET['id'];
-$sql = "SELECT * FROM tb_funcionarios WHERE id = $id";
+$sql = "SELECT * FROM tb_empresas WHERE id = $id";
 $comando = $conexao->prepare($sql);
 $comando->execute();
 
 
 //guarda os dados do usuario em um array
-$funcionario = $comando->fetch(PDO::FETCH_ASSOC);
+$empresa = $comando->fetch(PDO::FETCH_ASSOC);
 }
-
 catch(PDOException $erro){
 echo 'Erro ao buscar os dados:';$erro->getMessage();
 }
@@ -45,7 +44,7 @@ echo 'Erro ao buscar os dados:';$erro->getMessage();
             <ul>
                 
             
-                <li><a href="funcionarios-listar.php">Voltar</a></li>
+                <li><a href="empresas-listar.php">Voltar</a></li>
                 
             </ul>
 
@@ -53,43 +52,49 @@ echo 'Erro ao buscar os dados:';$erro->getMessage();
 </header>
     <main>
     <div id="container">
-    <h1>Funcionários - Editar</h1>
-    <form action="backend/funcionarios-atualizar.php" method="POST">
+    <h1>Empresas - Editar</h1>
+    <form action="backend/empresas-atualizar.php" method="POST">
         
         
             <div class="areas">
  <div>
             <label for="id">ID</label>
-            <input type="text" name="id" id="id" value="<?php echo $funcionario['id'] ?>" readonly>
+            <input type="text" name="id" id="id" value="<?php echo $empresa['id'] ?>" readonly>
         </div>
-
+        
         <div>
             <label for="nome">Nome</label>
-            <input type="text" name="nome" id="nome" value="<?php echo $funcionario['nome'] ?>">
+            <input type="text" name="nome" id="nome" value="<?php echo $empresa['nome'] ?>">
         </div>
+
+
+            <div>
+            <label for="area">Area</label>
+            <input type="text" name="area" id="area" value= " <?php echo $empresa['area'] ?>">
+        </div>
+         <div>
+            <label for="responsavel">Responsavel</label>
+            <input type="text" name="responsavel" id="responsavel" value= " <?php echo $empresa['responsavel'] ?>">
+        </div>
+
+            <div>
+            <label for="telefone">Telefone</label>
+            <input type="text" name="telefone" id="telefone" value= " <?php echo $empresa['telefone'] ?>">
+        </div>
+
+        
         <div>
             <label for="email">E-mail</label>
-            <input type="text" name="email" id="email" value=" <?php echo $funcionario['email'] ?>">
+            <input type="text" name="email" id="email" value=" <?php echo $empresa['email'] ?>">
         </div>
-        <div>
-            <label for="telefone">Telefone</label>
-            <input type="text" name="telefone" id="telefone" value= " <?php echo $funcionario['telefone'] ?>">
-        </div>
-        <div>
-            <label for="departamento">Departamento</label>
-            <select name="departamento" id="departamento">
-                <option value="" disabled selected>Selecione...</option>
-                <option value="Suporte" <?php if ($funcionario['departamento'] == 'Suporte') echo 'selected ';?>>Suporte</option>
-                <option value="Desenvolvimento" <?php if ($funcionario['departamento'] == 'Desenvolvimento') echo 'selected ';?>>Desenvolvimento</option>
-                <option value="Adiministrativo" <?php if ($funcionario['departamento'] == 'Adiministrativo') echo 'selected ';?>>Adiministrativo</option>
-
-            </select>
-        </div>
+       
+        
+        
     </div>
     <div class="botao">
         <input class="btn-cad" type="submit" value="Salvar">
     </div>
-    <a href="funcionarios-listar.php">Lista</a>
+    <a href="empresas-listar.php">Lista</a>
     </div>
     
     </form>
